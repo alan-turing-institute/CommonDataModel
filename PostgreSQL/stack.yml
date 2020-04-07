@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  db:
+    container_name: mimic_database
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+    - ./:/var/lib/postgresql
+    environment:
+      POSTGRES_PASSWORD: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: docker
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
