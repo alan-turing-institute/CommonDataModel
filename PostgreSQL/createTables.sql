@@ -249,6 +249,7 @@ CREATE TABLE person
 ;
 
 
+
 --HINT DISTRIBUTE_ON_KEY(person_id)
 CREATE TABLE observation_period
 (

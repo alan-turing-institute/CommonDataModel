@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   db:
-    container_name: mimic_database
+    container_name: omop
     build:
       context: ./
       dockerfile: Dockerfile
@@ -10,8 +10,7 @@ services:
     - ./:/var/lib/postgresql
     environment:
       POSTGRES_PASSWORD: docker
-      POSTGRES_PASSWORD: docker
-      POSTGRES_DB: docker
+      POSTGRES_DB: omop
 
   adminer:
     image: adminer
