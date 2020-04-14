@@ -248,6 +248,20 @@ CREATE TABLE person
 )
 ;
 
+--HINT DISTRIBUTE_ON_KEY(person_id)
+CREATE TABLE death
+(
+  person_id						BIGINT  NOT NULL , 
+  death_date				TIMESTAMP NULL ,
+  death_datetime					TIMESTAMP NULL ,
+  death_type_concept_id				INTEGER NOT NULL,
+  cause_concept_id					INTEGER NULL,
+  cause_source_value				INTEGER	NULL,
+  cause_source_concept_id				INTEGER	NULL,
+  last_updated_datetime				TIMESTAMP NOT NULL,
+  deleted_datetime			TIMESTAMP NULL
+)
+;
 
 
 --HINT DISTRIBUTE_ON_KEY(person_id)
