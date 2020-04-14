@@ -1,2 +1,2 @@
-person_id,gender_concept_id,year_of_birth,race_concept_id,ethnicity_concept_id,gender_source_concept_id,race_source_concept_id,ethnicity_source_concept_id,person_source_value
-1,8507,1967,0,0,0,0,0,0
+person_id,gender_concept_id,year_of_birth,last_updated_datetime
+1,8507,1967,2003-04-12 04:05:06

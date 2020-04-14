@@ -3,3 +3,5 @@ FROM '/var/lib/postgresql/csv/person.csv' DELIMITER ',' CSV HEADER;
 
 COPY death(person_id,death_type_concept_id,last_updated_datetime)
 FROM '/var/lib/postgresql/csv/death.csv' DELIMITER ',' CSV HEADER;
+COPY person(person_id,gender_concept_id,year_of_birth,last_updated_datetime)
+FROM '/var/lib/postgresql/csv/person.csv' DELIMITER ',' CSV HEADER;
